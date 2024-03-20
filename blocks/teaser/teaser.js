@@ -21,6 +21,7 @@ export function generateTeaserDOM(props, classes) {
   // Build DOM
   const teaserDOM = document.createRange().createContextualFragment(`
     <div class='background'>${picture ? picture.outerHTML : ''}</div>
+    <div class='test'>"Random Text Test"</div>
     <div class='foreground'>
       <div class='text'>
         ${
