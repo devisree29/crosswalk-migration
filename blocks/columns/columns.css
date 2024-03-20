@@ -1,0 +1,34 @@
+.columns {
+  font-family: var(--body-font-family);
+  font-size: var(--exlm-font-size-content);
+  font-weight: var(--font-weight-400);
+  font-style: normal;
+  line-height: var(--spectrum-line-height-l);
+  color: var(--spectrum-gray-800);
+}
+
+.columns > div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.columns > div > div {
+  padding: 16px;
+}
+
+.columns img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .columns > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .columns > div {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
